@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/mainPage.dart';
+import 'package:porfolio/responsive/deskTopmainPage.dart';
+import 'package:porfolio/responsive/responsiveLayout.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +22,10 @@ class MyApp extends StatelessWidget {
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Mainpage(),
+      home: Responsivelayout(
+        desktopScaffold: const DeskTopmainPage(),
+        mobileScaffold: const MobileMainpage(),
+      ),
     );
   }
 }

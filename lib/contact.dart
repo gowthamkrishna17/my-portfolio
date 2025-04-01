@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:porfolio/constWidget.dart';
+import 'package:porfolio/linkfetching.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Contact extends StatelessWidget {
@@ -55,19 +56,10 @@ class Contact extends StatelessWidget {
                   text: 'email',
                 ),
               ),
-              InkWell(
-                onTap: () async {
-                  const url = 'https://wa.me/9995880898';
-                  if (await canLaunchUrl(Uri.parse(url))) {
-                    await launchUrl(Uri.parse(url));
-                  } else {
-                    throw 'Could not launch $url';
-                  }
-                },
-                child: iconwidget(
-                  icon: Image.asset('assets/icon/whatsapp.png'),
-                  text: 'Whatsapp',
-                ),
+              iconwidget(
+                url: 'https://wa.me/9995880898',
+                icon: Image.asset('assets/icon/whatsapp.png'),
+                text: 'Whatsapp',
               ),
             ],
           ),
@@ -75,58 +67,21 @@ class Contact extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              InkWell(
-                onTap: () async {
-                  const url =
-                      'https://github.com/gowthamkrishna17?tab=repositories';
-                  if (await canLaunchUrl(Uri.parse(url))) {
-                    await launchUrl(Uri.parse(url));
-                  } else {
-                    throw 'Could not launch $url';
-                  }
-                },
-                child: iconwidget(
-                  icon: Image.asset('assets/icon/github.png'),
-                  text: 'Github',
-                ),
+              iconwidget(
+                url: 'https://github.com/gowthamkrishna17?tab=repositories',
+                icon: Image.asset('assets/icon/github.png'),
+                text: 'Github',
               ),
-              InkWell(
-                onTap: () async {
-                  const url =
-                      'https://www.linkedin.com/in/gowtham-krishna-409068270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app';
-                  if (await canLaunchUrl(Uri.parse(url))) {
-                    await launchUrl(Uri.parse(url));
-                  } else {
-                    throw 'Could not launch $url';
-                  }
-                },
-
-                child: iconwidget(
-                  icon: Image.asset('assets/icon/message.png'),
-                  text: 'Linkdin',
-                ),
+              iconwidget(
+                url:
+                    'https://www.linkedin.com/in/gowtham-krishna-409068270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+                icon: Image.asset('assets/icon/message.png'),
+                text: 'Linkdin',
               ),
             ],
           ),
         ],
       ),
-    );
-  }
-}
-
-class iconwidget extends StatelessWidget {
-  final String text;
-  final Image icon;
-  const iconwidget({super.key, required this.icon, required this.text});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        SizedBox(height: 50, width: 50, child: icon),
-        kwidth10,
-        Text(text, style: TextStyle(fontSize: 18)),
-      ],
     );
   }
 }

@@ -5,14 +5,14 @@ import 'package:porfolio/contact.dart';
 import 'package:porfolio/home.dart';
 import 'package:porfolio/project.dart';
 
-class Mainpage extends StatefulWidget {
-  const Mainpage({super.key});
+class MobileMainpage extends StatefulWidget {
+  const MobileMainpage({super.key});
 
   @override
-  State<Mainpage> createState() => _MainpageState();
+  State<MobileMainpage> createState() => _MainpageState();
 }
 
-class _MainpageState extends State<Mainpage> {
+class _MainpageState extends State<MobileMainpage> {
   int _selectedIndex = 0;
 
   final List<Widget> _pages = [Home(), About(), Project(), Contact()];
@@ -41,7 +41,12 @@ class _MainpageState extends State<Mainpage> {
       },
       child: Text(
         text,
-        style: TextStyle(color: _selectedIndex == index ? kwhite : kblack),
+        style: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w100,
+          fontFamily: 'KOMIKAX',
+          color: _selectedIndex == index ? kwhite : kblack,
+        ),
       ),
     );
   }

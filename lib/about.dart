@@ -21,11 +21,14 @@ class About extends StatelessWidget {
                   'assets/lottie/Animation - 1743131774683 (1).json',
                 ),
               ),
+              kheight10,
+              Text("About me ", style: ksize25Bl),
+              kheight10,
               Text(
-                "Hi, I'm Your Name, a Flutter developer passionate about creating high-performance, "
+                "Hi, I'm Gowtham, a Flutter developer passionate about creating high-performance, "
                 " cross-platform mobile apps ,With a background in computer hardware and networking, "
                 " I transitioned into software development and have built projects like e-commerce apps, "
-                "job-search platforms, and streaming service demos."
+                "Netflix mobile app ui clone,To-Do app."
                 "I specialize in Flutter, API integration, and state management Provider."
                 "I'm eager to contribute to innovative projects and grow as a developer."
                 "Check out my projects or connect with me",
@@ -38,6 +41,19 @@ class About extends StatelessWidget {
                 ),
 
                 softWrap: true,
+              ),
+              kheight15,
+              SizedBox(
+                height: 50,
+                child: Row(
+                  children: [
+                    Text("skills :", style: ksize25Bl),
+                    Image.asset('assets/icon/icons8-flutter-144.png'),
+                    Image.asset('assets/icon/icons8-dart-144.png'),
+                    Image.asset('assets/icon/icons8-html-144.png'),
+                    Image.asset('assets/icon/icons8-css-144.png'),
+                  ],
+                ),
               ),
             ],
           ),

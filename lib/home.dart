@@ -12,12 +12,22 @@ class Home extends StatelessWidget {
       child: Column(
         children: [
           kheight10,
-          CircleAvatar(
-            radius: 110,
-            backgroundColor: Colors.amber,
-            child: CircleAvatar(backgroundColor: Colors.white, radius: 105),
+          kheight20,
+          kheight20,
+          Transform.scale(
+            scale: 1.3,
+            child: CircleAvatar(
+              radius: 90,
+              backgroundColor: kgray,
+              child: CircleAvatar(
+                backgroundColor: kblack,
+                backgroundImage: AssetImage('assets/lottie/IMG_3704.JPG'),
+                radius: 88,
+              ),
+            ),
           ),
           kheight10,
+          kheight25,
           RichText(
             textAlign: TextAlign.center,
             text: TextSpan(
@@ -71,7 +81,8 @@ class Home extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           kheight10,
-          costomeButton(onTap: () {}, color: kblue, text: "Download resume"),
+          Resumedownloadbtn(),
+          kheight15,
         ],
       ),
     );

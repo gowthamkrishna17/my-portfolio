@@ -11,9 +11,27 @@ const TextStyle ksize30B = TextStyle(
   fontFamily: 'KOMIKAX',
   fontWeight: FontWeight.bold,
 );
+const TextStyle ksize30Bl = TextStyle(
+  color: kgray,
+  fontSize: 30,
+  fontFamily: 'KOMIKAX',
+  fontWeight: FontWeight.bold,
+);
+const TextStyle ksize25Bl = TextStyle(
+  color: kgray,
+  fontSize: 25,
+  fontFamily: 'KOMIKAX',
+  fontWeight: FontWeight.bold,
+);
 const TextStyle ksize28B = TextStyle(
   color: kblack,
   fontSize: 30,
+  fontWeight: FontWeight.bold,
+  fontFamily: 'KOMIKAX',
+);
+const TextStyle ksize18B = TextStyle(
+  color: kwhite,
+  fontSize: 18,
   fontWeight: FontWeight.bold,
   fontFamily: 'KOMIKAX',
 );
@@ -26,6 +44,14 @@ const TextStyle kaboutText = TextStyle(
   color: kgray,
   fontFamily: 'Exo-Medium',
   fontSize: 19,
+  height: 1.5,
+  fontWeight: FontWeight.w400,
+  letterSpacing: 1.5,
+);
+const TextStyle kaboutTextDesk = TextStyle(
+  color: kgray,
+  fontFamily: 'Exo-Medium',
+  fontSize: 22,
   height: 1.5,
   fontWeight: FontWeight.w400,
   letterSpacing: 1.5,
