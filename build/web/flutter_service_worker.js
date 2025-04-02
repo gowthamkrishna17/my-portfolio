@@ -3,7 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "0dc3b4fad04e10d4131080d54a2c95a1",
+const RESOURCES = {".vercel/project.json": "aba516a4668401d72846cb0a05ec1121",
+".vercel/README.txt": "2b13c79d37d6ed82a3255b83b6815034",
+"assets/AssetManifest.bin": "0dc3b4fad04e10d4131080d54a2c95a1",
 "assets/AssetManifest.bin.json": "c4c3ae9f7effc9da7d20b5b6ca6592e2",
 "assets/AssetManifest.json": "c9c9f047c7eec44195d3a05eb10d62a9",
 "assets/assets/fonts/Comic%2520Book.otf": "7599cff5acd78ecf7fee84263bcbea54",
@@ -73,14 +75,14 @@ const RESOURCES = {"assets/AssetManifest.bin": "0dc3b4fad04e10d4131080d54a2c95a1
 "canvaskit/skwasm_st.wasm": "56c3973560dfcbf28ce47cebe40f3206",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "flutter.js": "76f08d47ff9f5715220992f993002504",
-"flutter_bootstrap.js": "9a24e97a62b0c649cfb6aa9b4f10fe4e",
+"flutter_bootstrap.js": "b67c994aed1cd74e4dad2adb7cd42b12",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "index.html": "55f21de789fde4185db079ccc7173573",
 "/": "55f21de789fde4185db079ccc7173573",
-"main.dart.js": "002295648376c6c5d9478b63f8da84ed",
+"main.dart.js": "d1a781578501baed800605d285783387",
 "manifest.json": "452a717921227321b0ac624fac6b7b2d",
 "version.json": "40e7b06505e2c3869ae177334fa1b1b4"};
 // The application shell files that are downloaded before a service worker can

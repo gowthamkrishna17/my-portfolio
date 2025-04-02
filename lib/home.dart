@@ -19,8 +19,8 @@ class Home extends StatelessWidget {
             child: CircleAvatar(
               radius: 90,
               backgroundColor: kgray,
-              child: CircleAvatar(
-                backgroundColor: kblack,
+              child: const CircleAvatar(
+                backgroundColor: kwhite,
                 backgroundImage: AssetImage('assets/lottie/IMG_3704.JPG'),
                 radius: 88,
               ),
@@ -30,10 +30,10 @@ class Home extends StatelessWidget {
           kheight25,
           RichText(
             textAlign: TextAlign.center,
-            text: TextSpan(
+            text: const TextSpan(
               text: "Hi i'm. ",
               style: ksize28B,
-              children: [
+              children: const [
                 TextSpan(text: "Gowtham\n", style: ksize30B),
 
                 TextSpan(text: 'Flutter', style: ksize30B),
@@ -49,12 +49,12 @@ class Home extends StatelessWidget {
               textAlign: TextAlign.center,
 
               softWrap: true,
-              text: TextSpan(
+              text: const TextSpan(
                 text:
                     "Passionate about building beautiful & efficient mobile apps using flutter. "
                     "Eager to learn, grow and contribute to innovative projects.",
                 style: kaboutText,
-                children: [
+                children: const [
                   TextSpan(text: "View my ", style: kaboutText),
                   TextSpan(
                     text: "Project",
@@ -75,7 +75,7 @@ class Home extends StatelessWidget {
             ),
           ),
           kheight5,
-          Text(
+          const Text(
             "Palakkad,Kerala,india",
             style: kaboutText,
             textAlign: TextAlign.center,

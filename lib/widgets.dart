@@ -50,7 +50,7 @@ class Resumedownloadbtn extends StatelessWidget {
         minimumSize: Size(30, 50),
       ),
       onPressed: _downloadResume,
-      child: Text(
+      child: const Text(
         "Download resume",
         style: TextStyle(color: kwhite, fontFamily: 'KOMIKAX'),
       ),

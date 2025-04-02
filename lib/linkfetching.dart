@@ -79,7 +79,8 @@ class emailbtn extends StatelessWidget {
   void _launchEmail() async {
     final Uri emailUri = Uri(
       scheme: 'mailto',
-      path: 'gowthamgo024@gmail.com', // Replace with your email address
+      path:
+          'https://mail.google.com/mail/u/0/#sent?compose=new', // Replace with your email address
       queryParameters: {
         'subject': 'Portfolio Inquiry',
         'body': 'Hello, I would like to discuss your portfolio.',
@@ -103,6 +104,36 @@ class emailbtn extends StatelessWidget {
           kwidth10,
           Text(text, style: TextStyle(fontSize: 18)),
         ],
+      ),
+    );
+  }
+}
+
+class emaillinkbtn extends StatelessWidget {
+  Future<void> _launchEmail2() async {
+    final email =
+        'mailto:gowthamkrishna1717@gmail.com?subject=Portfolio Inquiry&body=Hello, I would like to learn more about your work.';
+
+    if (await canLaunch(email)) {
+      await launch(email);
+    } else {
+      throw 'Could not launch $email';
+    }
+  }
+
+  const emaillinkbtn({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      style: TextButton.styleFrom(
+        backgroundColor: kblue,
+        minimumSize: Size(30, 50),
+      ),
+      onPressed: _launchEmail2,
+      child: Text(
+        "Download resume",
+        style: TextStyle(color: kwhite, fontFamily: 'KOMIKAX'),
       ),
     );
   }

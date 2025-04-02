@@ -46,12 +46,9 @@ class Contact extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
             children: [
-              InkWell(
-                onTap: _launchEmail,
-                child: iconwidget(
-                  icon: Image.asset('assets/icon/emailfill.png'),
-                  text: 'email',
-                ),
+              emailbtn(
+                icon: Image.asset('assets/icon/emailfill.png'),
+                text: 'email',
               ),
               iconwidget(
                 url: 'https://wa.me/9995880898',

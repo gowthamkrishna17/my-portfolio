@@ -30,7 +30,7 @@ class Project extends StatelessWidget {
             ],
           ),
           Container(
-            margin: EdgeInsets.all(20),
+            margin: const EdgeInsets.all(20),
 
             child: CarouselSlider(
               items: [
@@ -74,7 +74,7 @@ class Project extends StatelessWidget {
             ],
           ),
           Container(
-            margin: EdgeInsets.all(20),
+            margin: const EdgeInsets.all(20),
 
             child: CarouselSlider(
               items: [
