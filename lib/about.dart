@@ -26,7 +26,7 @@ class About extends StatelessWidget {
               kheight10,
               Text(
                 "Hi, I'm Gowtham, a Flutter developer passionate about creating high-performance, "
-                " cross-platform mobile apps ,With a background in computer hardware and networking, "
+                " cross-platform mobile apps ,With a background in computer hardware and networking. "
                 " I transitioned into software development and have built projects like e-commerce apps, "
                 "Netflix mobile app ui clone,To-Do app."
                 "I specialize in Flutter, API integration, and state management Provider."

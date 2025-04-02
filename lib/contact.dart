@@ -35,10 +35,7 @@ class Contact extends StatelessWidget {
             width: 200,
             child: Lottie.asset('assets/lottie/Animation - 1743142597346.json'),
           ),
-          Text(
-            "Contact",
-            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-          ),
+          Text("Contact", style: ksize25Bl),
           kheight10,
           Text(
             "Get in touch with me via social media or email",
