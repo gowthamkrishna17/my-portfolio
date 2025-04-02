@@ -96,28 +96,31 @@ class emailbtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: _launchEmail,
-      child: Row(
-        children: [
-          SizedBox(height: 50, width: 50, child: icon),
-          kwidth10,
-          Text(text, style: TextStyle(fontSize: 18)),
-        ],
+    return Tooltip(
+      message: "gowthamkrishna1717@gmail.com",
+      child: InkWell(
+        onTap: _launchEmail,
+        child: Row(
+          children: [
+            SizedBox(height: 50, width: 50, child: icon),
+            kwidth10,
+            Text(text, style: TextStyle(fontSize: 18)),
+          ],
+        ),
       ),
     );
   }
 }
 
 class emaillinkbtn extends StatelessWidget {
-  Future<void> _launchEmail2() async {
-    final email =
-        'mailto:gowthamkrishna1717@gmail.com?subject=Portfolio Inquiry&body=Hello, I would like to learn more about your work.';
+  final String resumeUrl =
+      'https://drive.google.com/file/d/1fOX7k7xjU1QroSsEBv8cmDN_D9e-hesT/view?usp=drive_link'; // Change to your resume URL
 
-    if (await canLaunch(email)) {
-      await launch(email);
+  Future<void> _launchURL() async {
+    if (await canLaunch(resumeUrl)) {
+      await launch(resumeUrl);
     } else {
-      throw 'Could not launch $email';
+      throw 'Could not launch $resumeUrl';
     }
   }
 
@@ -130,7 +133,7 @@ class emaillinkbtn extends StatelessWidget {
         backgroundColor: kblue,
         minimumSize: Size(30, 50),
       ),
-      onPressed: _launchEmail2,
+      onPressed: _launchURL,
       child: Text(
         "Download resume",
         style: TextStyle(color: kwhite, fontFamily: 'KOMIKAX'),
